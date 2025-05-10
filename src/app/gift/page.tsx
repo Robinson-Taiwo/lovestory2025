@@ -91,8 +91,6 @@ export default function GiftTheCouple() {
                 <Button
                   asChild
                   className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
-                  variants={buttonVariants}
-                  whileHover="hover"
                 >
                   <a
                     href="https://www.zola.com/registry/zoeandjoshua"
@@ -121,8 +119,6 @@ export default function GiftTheCouple() {
                 <Button
                   asChild
                   className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
-                  variants={buttonVariants}
-                  whileHover="hover"
                 >
                   <a
                     href="https://www.paypal.com/zoeandjoshua"
