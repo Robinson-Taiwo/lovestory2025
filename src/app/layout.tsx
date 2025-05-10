@@ -13,6 +13,7 @@ import {
   Sacramento,
 } from 'next/font/google';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/next';
 
 // Configure fonts with CSS variables for Tailwind
 const playfair = Playfair_Display({
@@ -112,6 +113,7 @@ export default function RootLayout({
         `}
       >
         {children}
+        <Analytics/>
       </body>
     </html>
   );
