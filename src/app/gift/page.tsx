@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
 
 export default function GiftTheCouple() {
   // Animation variants for sections
@@ -120,13 +121,13 @@ export default function GiftTheCouple() {
                   asChild
                   className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
                 >
-                  <a
+                  <Link
                     href="https://www.paypal.com/zoeandjoshua"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Send a Gift
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>

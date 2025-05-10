@@ -85,7 +85,7 @@ const sacramento = Sacramento({
 });
 
 export const metadata: Metadata = {
-  title: 'HarmoniQ Wedding',
+  title: 'JZ lovestory 2025',
   description: 'Join us for a celebration of love and unity',
 };
 
