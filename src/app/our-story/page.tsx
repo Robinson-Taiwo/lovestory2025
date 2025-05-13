@@ -7,55 +7,41 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
 
-// Updated Timeline Data
 const timeline = [
   {
-    date: 'March 2015',
-    title: 'A Chance Encounter',
+    title: 'A Hot Day & A Cold Coke',
     description:
-      'After a long day of lectures, Joshua was heading to his hotel with a cold coke in hand when Zoe approached him with a calm, gentle voice. She requested a tutorial session for herself and her friends. They exchanged pleasantries, and Joshua agreed to the tutorial.',
+      "The sun was hot and I was really exhausted from the day's lectures, going to my hotel to enjoy the cold coke I had bought for the hot weather. I was chatting with my buddy and colleague—Mathew—as we glide along with corridors of our lecture theatre.",
     image: '/images/first-meeting.jpg',
-    alt: 'Joshua and Zoe first meeting',
+    alt: 'Joshua holding a coke, walking with Mathew',
   },
   {
-    date: 'April 2015',
+    title: 'A Gentle Voice',
+    description:
+      "Then, a lady walked up to me with her calm, gentle voice with an accent that's almost American. I thought she was forming posh-lady. We exchanged pleasantries and she requested that I take herself and two of her friends tutorial on a particular topic with calculation. I said okay that she should fix a time and get back to me.",
+    image: '/images/tutorial-request.jpg',
+    alt: 'Zoe approaching Joshua',
+  },
+  {
     title: 'The Tutorial Session',
     description:
-      'Joshua conducted the tutorial session as promised. It was a brief interaction, and they parted ways, not knowing their paths would cross again years later.',
+      'I took the tutorial class and that was the last time we saw till I left the university.',
     image: '/images/tutorial-session.jpg',
-    alt: 'Tutorial session',
+    alt: 'Tutorial session with Zoe and friends',
   },
   {
-    date: 'June 2021',
-    title: 'Reconnecting Online',
+    title: 'The Unexpected Reconnection',
     description:
-      'Six years later, Joshua stumbled upon a video Zoe posted on Facebook. Captivated by her soft, sweet voice, he decided to reach out, rekindling their connection.',
+      'About 6 years later, I stumbled on a video post she made on Facebook and decided to reach out because oh boy I was captivated with her soft sweet voice.',
     image: '/images/reconnecting-online.jpg',
-    alt: 'Reconnecting through Facebook',
+    alt: 'Joshua discovering Zoe on Facebook',
   },
   {
-    date: 'August 2021',
-    title: 'Friendship Rekindled',
+    title: 'From Friendship to Love',
     description:
-      'Their online conversations blossomed into a deep friendship. They shared stories, dreams, and laughter, laying the foundation for something more.',
-    image: '/images/friendship.jpg',
-    alt: 'Zoe and Joshua becoming friends',
-  },
-  {
-    date: 'December 2021',
-    title: 'Love Blossoms',
-    description:
-      'As their bond grew stronger, Zoe and Joshua realized their feelings had deepened. They embraced their love, marking the beginning of their courtship.',
+      "That's how we started our friendship then transitioned to courtship. It's been a beautiful journey with the love of my life Zoe.",
     image: '/images/love-blossoms.jpg',
-    alt: 'Zoe and Joshua in love',
-  },
-  {
-    date: 'August 2023',
-    title: 'The Proposal',
-    description:
-      'Joshua proposed on a cliff overlooking the ocean, with the sunset painting the sky in gold and wine. Zoe said yes, sealing their promise with a kiss.',
-    image: '/images/proposal.jpg',
-    alt: 'Joshua proposing to Zoe',
+    alt: 'Joshua and Zoe as a couple',
   },
 ];
 
@@ -165,7 +151,7 @@ export default function OurStory() {
               <Card className="w-full md:w-1/2 bg-wedding-cream border-wedding-wine/50 shadow-md">
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-playfair font-bold text-wedding-wine">
-                    {event.date}: {event.title}
+                    {event.title}
                   </h3>
                   <p className="mt-4 text-lg font-lora text-wedding-charcoal">
                     {event.description}
@@ -178,7 +164,7 @@ export default function OurStory() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-16 bg-wedding-wine/10 text-center">
+      <section className="py-16 px-6 bg-wedding-wine/10 text-center">
         <motion.blockquote
           className="text-2xl sm:text-3xl font-greatVibes text-wedding-wine max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
@@ -190,7 +176,7 @@ export default function OurStory() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 text-center bg-wedding-cream">
+      <section className="py-16 px-6 text-center bg-wedding-cream">
         <motion.p
           className="text-lg sm:text-xl font-greatVibes text-wedding-wine max-w-2xl mx-auto mb-8"
           initial={{ opacity: 0, y: 20 }}
