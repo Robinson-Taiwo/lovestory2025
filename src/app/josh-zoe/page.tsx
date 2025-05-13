@@ -1,30 +1,27 @@
-'use client'
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 import { Parallax } from 'react-parallax';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import LoveLetters from '@/components/LoveLetters';
+import VowsSection from '@/components/Vows';
+import QuotesSection from '@/components/Quotes';
 
 
 
 const Josh = () => {
 
-  const [activeVow, setActiveVow] = useState<number | null>(null);
-
-  const [activeLetter, setActiveLetter] = useState<'Joshua' | 'Zoe' | null>(null);
+ 
 
   const letters = {
     Joshua: {
       title: 'To Zoe',
       content:
-        'Zoe, from the moment we walked along the shore, your laughter became my favorite song. The waves taught me patience, but you taught me love—endless, like the tide. Every sunrise we’ve chased, every shell we’ve collected, has built a life I can’t wait to live with you. I promise to be your anchor, your partner, through every storm and calm sea. Here’s to our forever, written in the sand and sealed by the sea.',
+        'My Love, You are my answered prayer, my divine gift wrapped in grace. Each day with you feels like a testimony, and your smile is my daily miracle. Just like Ruth to Boaz, you are my blessing in season. I cherish you with a love rooted in God, guided by His light. May heaven keep us together, stronger in faith and deeper in love. My heart sings your name in every prayer. You’re my forever, my love ordained by God./n',
     },
     Zoe: {
       title: 'To Joshua',
       content:
-        'Joshua, you’re my lighthouse in every storm, guiding me home with your smile. The first time I saw you by the ocean, I knew my heart had found its shore. Your kindness is my compass, your love my map. I promise to hold your hand through every sunset we chase, to build sandcastles and dreams together. Our love is a tide that never fades, and I can’t wait to sail into forever with you.',
+        "Iyanu, my Love, you are more than a blessing; you are a quiet miracle wrapped in kindness, laughter, and love. In you, I’ve found strength, gentleness, and a heart that mirrors mine. You make loving you so easy, and every moment with you feels like sunlight pouring through my soul.\n\nAs we begin this new chapter as husband and wife, I want you to know that I am here—wholly and completely. In joy and in trials, in abundance and in simplicity. I will be your partner, your confidant, your encourager, and your warm hug at the end of long days.\n\nThank you for choosing me. Thank you for your patience, your prayers, your dreams, and your heart. I look forward to building with you, laughing with you, learning with you, and walking hand in hand with you through every season.\n\nwith all my love,\nyour wife,\nZoe♡.",
     },
   };
 
@@ -98,6 +95,15 @@ const Josh = () => {
         </div>
       </section>
 
+      <LoveLetters letters={letters} />
+
+      <VowsSection vows={vows} />
+
+      <QuotesSection quotes={quotes} />
+
+
+
+
       {/* SECTION TWO */}
       <Parallax bgImage="/images/paper.png" strength={400}>
         <section className="w-full py-20 lg:py-30 relative justify-center flex items-center">
@@ -170,131 +176,7 @@ const Josh = () => {
       </Parallax>
 
 
-      <Parallax bgImage="/images/wr.png" strength={300} className="bg-center bg-cover bg-no-repeat" >
 
-        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
-
-        <section className="relative px-10 py-24 lg:py-40 flex-col flex  items-center justify-center overflow-hidden">
-          <h2 className="text-center font-dancing-script text-4xl sm:text-5xl text-wedding-olive/120 mb-12">Our Love Letters </h2>
-
-          <h2 className="text-center font-playfair  text-lg sm:text-base text-wedding-olive/120  mb-12">check out love letters inspired by love and passion. romantic, soothing and beautiful </h2>
-          <div className="max-w-4xl mx-auto px-4">
-            {activeLetter ? (
-              <AnimatePresence>
-                <motion.div
-                  key={activeLetter}
-                  className="bg-transparent text-wedding-olive border border-wedding-olive  p-6 rounded-md shadow-lg"
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -50 }}
-                  transition={{ duration: 0.8 }}
-                >
-                  <h3 className="font-serif text-2xl text-wedding-olive  mb-4">{letters[activeLetter].title}♡</h3>
-                  <p className="text-wedding-cream leading-relaxed">{letters[activeLetter].content}</p>
-                  <button
-                    onClick={() => setActiveLetter(null)}
-                    className="mt-6 px-4 py-2 bg-transparent border-wedding-olive border text-wedding-olive  font-semibold rounded-md hover:bg-wedding-olive transition-colors"
-                  >
-                    Close
-                  </button>
-                </motion.div>
-              </AnimatePresence>
-            ) : (
-              <div className="flex justify-center gap-8">
-                <motion.div
-                  className="cursor-pointer"
-                  whileHover={{ scale: 1.05 }}
-                  onClick={() => setActiveLetter('Joshua')}
-                >
-                  <Image
-                    src="/images/rings.png" // Replace with actual image path
-                    alt="Bottle for Joshua's letter"
-                    width={120}
-                    height={200}
-                  />
-                  <p className="text-center text-wedding-olive font-bold mt-2">To Zoe</p>
-                </motion.div>
-                <motion.div
-                  className="cursor-pointer"
-                  whileHover={{ scale: 1.05 }}
-                  onClick={() => setActiveLetter('Zoe')}
-                >
-                  <Image
-                    src="/images/rings.png" // Replace with actual image path
-                    alt="Bottle for Zoe's letter"
-                    width={120}
-                    height={200}
-                  />
-                  <p className="text-center text-wedding-olive font-bold mt-2">To Joshua</p>
-                </motion.div>
-              </div>
-            )}
-          </div>
-        </section>
-      </Parallax>
-
-
-      <Parallax bgImage="/images/rose.png" strength={300} className="bg-center bg-cover bg-no-repeat  relative ">
-
-        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
-
-        <section className="py-24 lg:py-40 relative z-10 px-8 ">
-          <h2 className="text-center font-dancing-script px-10 text-4xl sm:text-5xl text-wedding-gold mb-12">Words That Echo Our Love</h2>
-          <p className="text-center text-wedding-cream max-w-2xl mx-auto mb-8">
-            The ocean has always inspired our love, and these words capture the waves of our hearts.
-          </p>
-          <div className="max-w-4xl bg-transparent  mx-auto z-10 px-4 space-y-12">
-            {quotes.map((quote, index) => (
-              <motion.div
-                key={index}
-                className="bg-transparent p-6 rounded-md border-wedding-gold  border  shadow-lg"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                <p className="font-serif text-xl text-wedding-gold italic mb-4">{quote.text}</p>
-                <p className="text-wedding-cream">{quote.reflection}</p>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-
-
-      </Parallax>
-
-
-
-
-
-      <Parallax bgImage="/images/water.png" strength={300} className="bg-center bg-cover bg-no-repeat  relative ">
-
-        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
-
-        <section className="py-24 lg:py-40 px-10  relative z-10  bg-gradient-to-b from-sky-10 to-sand-100">
-          <h2 className="text-center  text-4xl sm:text-5xl text-wedding-cream font-dancing-script font-bold mb-12   ">Our Promises for eternity</h2>
-          <p className="text-center text-wedding-cream max-w-2xl mx-auto mb-8">
-            As we prepare to say ‘I do,’ these are the promises we hold in our hearts, inspired by the sea that brought us together.
-          </p>
-          <div className="max-w-4xl mx-auto px-4 space-y-6">
-            {vows.map((vow, index) => (
-              <motion.div
-                key={index}
-                className="bg-transparent p-6 rounded-md shadow-lg border-wedding-cream border cursor-pointer"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                onClick={() => setActiveVow(activeVow === index ? null : index)}
-              >
-                <h3 className="font-serif text-2xl text-wedding-cream mb-2">{vow.title}</h3>
-                <p className="text-wedding-cream">{activeVow === index ? vow.full : vow.excerpt}</p>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-
-
-
-      </Parallax>
 
 
 
