@@ -1,10 +1,11 @@
-
+"use client"
 import { Parallax } from 'react-parallax';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import LoveLetters from '@/components/LoveLetters';
 import VowsSection from '@/components/Vows';
 import QuotesSection from '@/components/Quotes';
+import { Heart, Waves, Handshake, Infinity, Quote, Book } from "lucide-react"; // or your preferred icon set
 
 
 
@@ -27,19 +28,36 @@ const Josh = () => {
 
   const quotes = [
     {
-      text: '“Love is the sea where intellect drowns and the heart swims.” – Rumi',
-      reflection: 'Joshua: This reminds me of our midnight talks by the beach, where words fell away, and our hearts spoke louder than the waves.',
+      icon: <Heart className="text-wedding-gold w-6 h-6" />,
+      text: '“Love bears all things, believes all things, hopes all things, endures all things.” – 1 Corinthians 13:7',
+      reflection: 'Zoe: Your love carries me through the highs and lows — unwavering, enduring, and full of hope.',
     },
     {
-      text: '“We loved with a love that was more than love.” – Edgar Allan Poe',
-      reflection: 'Zoe: Your laughter on our first beach date felt like a wave crashing over my soul, endless and alive.',
+      icon: <Book className="text-wedding-gold w-6 h-6" />,
+      text: '“I have found the one whom my soul loves.” – Song of Solomon 3:4',
+      reflection: 'Joshua: From the first moment, my soul recognized you — like a promise fulfilled by God Himself.',
     },
     {
-      text: '“The heart is a tide, always returning to the shore of love.” – Unknown',
-      reflection: 'Joshua & Zoe: Every trip to the ocean feels like coming home, because it’s where we promised forever.',
+      icon: <Handshake className="text-wedding-gold w-6 h-6" />,
+      text: '“Two are better than one... for if they fall, one will lift up the other.” – Ecclesiastes 4:9-10',
+      reflection: 'Zoe: You’re my strength when I stumble, my safe place when the world feels heavy.',
+    },
+    {
+      icon: <Quote className="text-wedding-gold w-6 h-6" />,
+      text: '“Let all that you do be done in love.” – 1 Corinthians 16:14',
+      reflection: 'Joshua & Zoe: In every word, every touch, every choice — we choose love first.',
+    },
+    {
+      icon: <Waves className="text-wedding-gold w-6 h-6" />,
+      text: '“Many waters cannot quench love; rivers cannot wash it away.” – Song of Solomon 8:7',
+      reflection: 'Zoe: Even the waves of life can’t drown what God has written on our hearts.',
+    },
+    {
+      icon: <Infinity className="text-wedding-gold w-6 h-6" />,
+      text: '“Above all, love each other deeply, because love covers over a multitude of sins.” – 1 Peter 4:8',
+      reflection: 'Joshua: Your grace teaches me how to love beyond flaws — just as Christ loved us.',
     },
   ];
-
 
   const vows = [
     {
