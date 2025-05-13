@@ -11,36 +11,36 @@ const timeline = [
   {
     title: 'A Hot Day & A Cold Coke',
     description:
-      "The sun was hot and I was really exhausted from the day's lectures, going to my hotel to enjoy the cold coke I had bought for the hot weather. I was chatting with my buddy and colleague—Mathew—as we glide along with corridors of our lecture theatre.",
-    image: '/images/first-meeting.jpg',
+      "The sun was hot and I was really exhausted from the day's lectures, going to my hostel to enjoy the cold coke I had bought for the hot weather. I was chatting with my buddy and colleague—Mathew—as we glide along with corridors of our lecture theatre.",
+    image: '/images/coke.png',
     alt: 'Joshua holding a coke, walking with Mathew',
   },
   {
     title: 'A Gentle Voice',
     description:
       "Then, a lady walked up to me with her calm, gentle voice with an accent that's almost American. I thought she was forming posh-lady. We exchanged pleasantries and she requested that I take herself and two of her friends tutorial on a particular topic with calculation. I said okay that she should fix a time and get back to me.",
-    image: '/images/tutorial-request.jpg',
+    image: '/images/rings.png',
     alt: 'Zoe approaching Joshua',
   },
   {
     title: 'The Tutorial Session',
     description:
       'I took the tutorial class and that was the last time we saw till I left the university.',
-    image: '/images/tutorial-session.jpg',
+    image: '/images/flow.png',
     alt: 'Tutorial session with Zoe and friends',
   },
   {
     title: 'The Unexpected Reconnection',
     description:
       'About 6 years later, I stumbled on a video post she made on Facebook and decided to reach out because oh boy I was captivated with her soft sweet voice.',
-    image: '/images/reconnecting-online.jpg',
+    image: '/images/butter.svg',
     alt: 'Joshua discovering Zoe on Facebook',
   },
   {
     title: 'From Friendship to Love',
     description:
       "That's how we started our friendship then transitioned to courtship. It's been a beautiful journey with the love of my life Zoe.",
-    image: '/images/love-blossoms.jpg',
+    image: '/images/bull.png',
     alt: 'Joshua and Zoe as a couple',
   },
 ];
