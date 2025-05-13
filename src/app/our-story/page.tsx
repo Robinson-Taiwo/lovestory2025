@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
 
 // Timeline data
 const timeline = [
@@ -200,20 +201,20 @@ export default function OurStory() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Celebrate our love with us on 08.15.25
+          Celebrate our love with us on 10.15.25
         </motion.p>
         <div className="flex justify-center gap-4">
           <Button
             asChild
             className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
           >
-            <a href="/josh-zoe">Back to Our Story</a>
+            <Link href="/josh-zoe">Back to Our Overview page</Link>
           </Button>
           <Button
             asChild
             className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
           >
-            <a href="/gallery">View Our Gallery</a>
+            <Link href="/gallery">View Our Gallery</Link>
           </Button>
         </div>
       </section>
