@@ -100,7 +100,7 @@ const Josh = () => {
 
       {/* SECTION TWO */}
       <Parallax bgImage="/images/paper.png" strength={400}>
-        <section className="w-full xl:h-[80vh] h-[100vh] relative justify-center flex items-center">
+        <section className="w-full py-20 lg:py-30 relative justify-center flex items-center">
           <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
 
           <div className="flex w-full flex-col items-center max-w-5xl justify-center  text lg:flex-row z-10">
@@ -123,7 +123,7 @@ const Josh = () => {
                   size="lg"
                   className="mt-8 border-wedding-gold text-wedding-gold bg-transparent hover:bg-wedding-gold hover:text-wedding-charcoal font-lora"
                 >
-                 Explore Our Gallery
+                  Explore Our Gallery
                 </Button>
               </Link>
             </div>
@@ -133,7 +133,7 @@ const Josh = () => {
 
       {/* SECTION THREE */}
       <Parallax bgImage="/images/bulbs.png" strength={300} className="bg-center bg-cover bg-no-repeat" >
-        <section className="relative h-[90vh] xl:h-[70vh] py-24 text-center flex items-center justify-center text-wedding-cream border-dashed">
+        <section className="relative py-20 lg:py-30 text-center flex items-center justify-center text-wedding-cream border-dashed">
           <div className="absolute inset-0 bg-black opacity-80 z-0" />
           <div className="max-w-5xl flex items-center justify-center p-10 z-10">
             <div className="relative w-[100%] md:w-[60%] lg:w-[70%] mx-auto border-wedding-wine border rounded-md py-10 p-10  bg-black/40  ">
@@ -174,10 +174,10 @@ const Josh = () => {
 
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
 
-        <section className="relative px-10 py-16 h-[70vh] flex-col flex flex items-center justify-center lg:h-[60vh] overflow-hidden">
+        <section className="relative px-10 py-24 lg:py-40 flex-col flex  items-center justify-center overflow-hidden">
           <h2 className="text-center font-dancing-script text-4xl sm:text-5xl text-wedding-olive/120 mb-12">Our Love Letters </h2>
 
-          <h2 className="text-center font-playfair text-center text-lg sm:text-base text-wedding-olive/120  mb-12">check out love letters inspired by love and passion. romantic, soothing and beautiful </h2>
+          <h2 className="text-center font-playfair  text-lg sm:text-base text-wedding-olive/120  mb-12">check out love letters inspired by love and passion. romantic, soothing and beautiful </h2>
           <div className="max-w-4xl mx-auto px-4">
             {activeLetter ? (
               <AnimatePresence>
@@ -238,7 +238,7 @@ const Josh = () => {
 
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
 
-        <section className="py-20 relative z-10 ">
+        <section className="py-24 lg:py-40 relative z-10 px-8 ">
           <h2 className="text-center font-dancing-script px-10 text-4xl sm:text-5xl text-wedding-gold mb-12">Words That Echo Our Love</h2>
           <p className="text-center text-wedding-cream max-w-2xl mx-auto mb-8">
             The ocean has always inspired our love, and these words capture the waves of our hearts.
@@ -270,7 +270,7 @@ const Josh = () => {
 
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
 
-        <section className="py-16 px-10  relative z-10  bg-gradient-to-b from-sky-10 to-sand-100">
+        <section className="py-24 lg:py-40 px-10  relative z-10  bg-gradient-to-b from-sky-10 to-sand-100">
           <h2 className="text-center  text-4xl sm:text-5xl text-wedding-cream font-dancing-script font-bold mb-12   ">Our Promises for eternity</h2>
           <p className="text-center text-wedding-cream max-w-2xl mx-auto mb-8">
             As we prepare to say ‘I do,’ these are the promises we hold in our hearts, inspired by the sea that brought us together.

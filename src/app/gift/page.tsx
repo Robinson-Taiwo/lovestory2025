@@ -84,7 +84,7 @@ export default function GiftTheCouple() {
             <Card className="bg-wedding-cream border-wedding-wine/50 shadow-md">
               <CardContent className="p-6 text-center">
                 <h3 className="text-2xl font-playfair font-bold text-wedding-wine mb-4">
-                  Our Wedding Registry
+                  say something nice
                 </h3>
                 <p className="text-lg font-lora text-wedding-charcoal mb-6">
                   We’ve curated a registry with items to help us start our life together. From home essentials to special experiences, your gift will bring us joy every day.
@@ -98,7 +98,7 @@ export default function GiftTheCouple() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Visit Our Registry
+                    Say something sweet
                   </a>
                 </Button>
               </CardContent>
@@ -115,14 +115,14 @@ export default function GiftTheCouple() {
                   Digital Contributions
                 </h3>
                 <p className="text-lg font-lora text-wedding-charcoal mb-6">
-                  For guests joining us from around the world, you can send a monetary gift to support our future. Every contribution, big or small, is a blessing.
+                  For guests joining us from around the world, you can  send a monetary gift to support our future. Every contribution, big or small, is a blessing.
                 </p>
                 <Button
                   asChild
                   className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
                 >
                   <Link
-                    href="https://www.paypal.com/zoeandjoshua"
+                    href="https://selar.com/login?r=https%3A%2F%2Fselar.com%2Fme%2Fshowlove"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
