@@ -7,31 +7,47 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
 
-// Timeline data
+// Updated Timeline Data
 const timeline = [
   {
-    date: 'April 2019',
-    title: 'The Meeting',
+    date: 'March 2015',
+    title: 'A Chance Encounter',
     description:
-      'Zoe and Joshua met at a university charity event in Lagos. Joshua’s warm smile caught Zoe’s eye, and a shared love for music sparked their first conversation under the stars.',
-    image: '/images/meeting.jpg',
-    alt: 'Zoe and Joshua at charity event',
+      'After a long day of lectures, Joshua was heading to his hotel with a cold coke in hand when Zoe approached him with a calm, gentle voice. She requested a tutorial session for herself and her friends. They exchanged pleasantries, and Joshua agreed to the tutorial.',
+    image: '/images/first-meeting.jpg',
+    alt: 'Joshua and Zoe first meeting',
   },
   {
-    date: 'June 2020',
-    title: 'First Date by the Shore',
+    date: 'April 2015',
+    title: 'The Tutorial Session',
     description:
-      'Their first date was a sunset walk along Lagos Beach. The waves whispered promises, and their laughter became the soundtrack of a love that would grow forever.',
-    image: '/images/beach-date.jpg',
-    alt: 'Zoe and Joshua on beach date',
+      'Joshua conducted the tutorial session as promised. It was a brief interaction, and they parted ways, not knowing their paths would cross again years later.',
+    image: '/images/tutorial-session.jpg',
+    alt: 'Tutorial session',
+  },
+  {
+    date: 'June 2021',
+    title: 'Reconnecting Online',
+    description:
+      'Six years later, Joshua stumbled upon a video Zoe posted on Facebook. Captivated by her soft, sweet voice, he decided to reach out, rekindling their connection.',
+    image: '/images/reconnecting-online.jpg',
+    alt: 'Reconnecting through Facebook',
+  },
+  {
+    date: 'August 2021',
+    title: 'Friendship Rekindled',
+    description:
+      'Their online conversations blossomed into a deep friendship. They shared stories, dreams, and laughter, laying the foundation for something more.',
+    image: '/images/friendship.jpg',
+    alt: 'Zoe and Joshua becoming friends',
   },
   {
     date: 'December 2021',
-    title: 'Falling in Love',
+    title: 'Love Blossoms',
     description:
-      'Countless beach picnics and late-night talks later, Zoe and Joshua realized their hearts were intertwined. They confessed their love under a moonlit sky.',
-    image: '/images/moonlit-love.jpg',
-    alt: 'Zoe and Joshua under moonlight',
+      'As their bond grew stronger, Zoe and Joshua realized their feelings had deepened. They embraced their love, marking the beginning of their courtship.',
+    image: '/images/love-blossoms.jpg',
+    alt: 'Zoe and Joshua in love',
   },
   {
     date: 'August 2023',
@@ -41,26 +57,9 @@ const timeline = [
     image: '/images/proposal.jpg',
     alt: 'Joshua proposing to Zoe',
   },
-  {
-    date: 'March 2024',
-    title: 'Engagement Celebration',
-    description:
-      'Friends and family gathered to celebrate their engagement. The night was filled with music, laughter, and dreams of a future together.',
-    image: '/images/engagement.jpg',
-    alt: 'Zoe and Joshua’s engagement party',
-  },
-  {
-    date: 'August 2025',
-    title: 'Our Wedding Day',
-    description:
-      'The day we say ‘I do’ by the shore, surrounded by love and the ocean’s embrace. Our journey continues, written in the sands of time.',
-    image: '/images/wedding-day.jpg',
-    alt: 'Zoe and Joshua’s wedding',
-  },
 ];
 
 export default function OurStory() {
-  // Animation variants for timeline items
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: (i: number) => ({
@@ -70,7 +69,6 @@ export default function OurStory() {
     }),
   };
 
-  // Animation variants for section headers
   const headerVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -147,7 +145,6 @@ export default function OurStory() {
               viewport={{ once: true }}
               variants={cardVariants}
             >
-              {/* Image */}
               <div className="w-full md:w-1/2">
                 <motion.div
                   className="relative rounded-lg overflow-hidden shadow-lg group"
@@ -165,7 +162,6 @@ export default function OurStory() {
                   <div className="absolute inset-0 bg-wedding-wine/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </motion.div>
               </div>
-              {/* Text */}
               <Card className="w-full md:w-1/2 bg-wedding-cream border-wedding-wine/50 shadow-md">
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-playfair font-bold text-wedding-wine">
@@ -201,7 +197,7 @@ export default function OurStory() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Celebrate our love with us on 10.15.25
+          Celebrate our love with us on 08.15.25
         </motion.p>
         <div className="flex justify-center gap-4">
           <Button
