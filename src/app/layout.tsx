@@ -14,6 +14,7 @@ import {
 } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
+import Head from 'next/head';
 
 // Configure fonts with CSS variables for Tailwind
 const playfair = Playfair_Display({
@@ -86,7 +87,14 @@ const sacramento = Sacramento({
 
 export const metadata: Metadata = {
   title: 'JZ loveStory 2025',
-  description: 'Join us for a celebration of love and unity',
+  description: 'Join us for a celebration of love and unity between Joshua and Zoe',
+  openGraph: {
+    title: 'JZ loveStory 2025',
+    description: 'Join us for a celebration of love and unity between Joshua and Zoe',
+    images: ['/images/image1.png'],
+    url: 'https://lovestory2025.vercel.app/',
+  },
+
 };
 
 export default function RootLayout({
@@ -96,6 +104,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+<link  rel="icon" href='/favicon.ico' />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="JZ loveStory 2025" />
+        <meta property="og:description" content="Celebrate love and unity with the latest couple, Joshua and Zoe Taiwo" />
+        <meta property="og:image" content="/images/image1.png" />
+        <meta property="og:url" content="https://lovestory2025.vercel.app/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="JZ loveStory 2025" />
+        <meta name="twitter:title" content="JZ loveStory 2025" />
+        <meta name="twitter:description" content="Celebrate love and unity with the latest couple, Joshua and Zoe Taiwo!" />
+
+      </Head>
       <body
         className={`
           ${playfair.variable}
@@ -114,7 +138,7 @@ export default function RootLayout({
       >
         {children}
         <Analytics />
-        <div className="flex justify-center items-center w-full text-base bg-wedding-wine text-center text-wedding-cream">Built with fun and love by Taiwo (@Oluwarotimi_ on X). courtsey of Omoyeni&apos;s family</div>
+        <div className="flex py-4 px-4 justify-center items-center w-full text-base bg-wedding-wine font-playfair text-center text-wedding-cream">Built with fun and love by Taiwo <span className="text-wedding-gold">(@Oluwarotimi_ on X)</span>.</div>
       </body>
     </html>
   );
