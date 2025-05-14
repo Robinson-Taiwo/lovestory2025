@@ -19,7 +19,7 @@ const timeline = [
     title: 'A Gentle Voice',
     description:
       "Then, a lady walked up to me with her calm, gentle voice with an accent that's almost American. I thought she was forming posh-lady. We exchanged pleasantries and she requested that I take herself and two of her friends tutorial on a particular topic with calculation. I said okay that she should fix a time and get back to me.",
-    image: '/images/rings.png',
+    image: '/images/ringsss.png',
     alt: 'Zoe approaching Joshua',
   },
   {
@@ -64,7 +64,7 @@ export default function OurStory() {
     <div className="min-h-screen bg-wedding-cream text-wedding-charcoal">
       {/* Hero Section */}
       <section
-        className="relative h-[60vh] flex items-center justify-center w-full bg-cover bg-center"
+        className="relative h-[40vh] py-10 lg:h-[60vh] flex items-center justify-center w-full bg-cover bg-center"
         style={{ backgroundImage: "url('/images/secondedited.png')" }}
       >
         <div className="absolute inset-0 bg-wedding-wine/70"></div>
@@ -88,7 +88,7 @@ export default function OurStory() {
 
       {/* Couple Names Section */}
       <section
-        className="relative h-[40vh] flex items-center justify-center w-full bg-cover bg-center"
+        className="relative h-[20vh] flex items-center justify-center w-full bg-cover bg-center"
         style={{ backgroundImage: "url('/images/wedding1.png')" }}
       >
         <div className="absolute inset-0 bg-wedding-wine/50"></div>
@@ -178,19 +178,19 @@ export default function OurStory() {
       {/* Call to Action */}
       <section className="py-16 px-6 text-center bg-wedding-cream">
         <motion.p
-          className="text-lg sm:text-xl font-greatVibes text-wedding-wine max-w-2xl mx-auto mb-8"
+          className="text-lg px-8 sm:text-xl font-greatVibes text-wedding-wine max-w-2xl mx-auto mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Celebrate our love with us on 08.15.25
+          Celebrate our love with us on 10.15.25
         </motion.p>
-        <div className="flex justify-center gap-4">
+        <div className="flex px-8 justify-center gap-4">
           <Button
             asChild
             className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
           >
-            <Link href="/josh-zoe">Back to Our Overview page</Link>
+            <Link href="/josh-zoe">Go back</Link>
           </Button>
           <Button
             asChild

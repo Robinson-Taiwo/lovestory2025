@@ -110,6 +110,10 @@ const Josh = () => {
           <p className="text-sm text-wedding-white">
             A Home built in God with Jesus at the center
           </p>
+
+           <Link href="/gift"  className=" mt-6 " > <Button  className=" mt-6 bg-transparent border rounded-md border-wedding-cream text-lg p-6  text-wedding-cream" >  Gift the couple</Button></Link>
+
+          
         </div>
       </section>
 
