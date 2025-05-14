@@ -75,35 +75,8 @@ export default function GiftTheCouple() {
         >
           How to Gift Us
         </motion.h2>
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={sectionVariants}
-          >
-            <Card className="bg-wedding-cream border-wedding-wine/50 shadow-md">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-2xl font-playfair font-bold text-wedding-wine mb-4">
-                  say something nice
-                </h3>
-                <p className="text-lg font-lora text-wedding-charcoal mb-6">
-                  We’ve curated a registry with items to help us start our life together. From home essentials to special experiences, your gift will bring us joy every day.
-                </p>
-                <Button
-                  asChild
-                  className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
-                >
-                  <a
-                    href="https://www.zola.com/registry/zoeandjoshua"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Say something sweet
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          </motion.div>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-1 w-[90%] md:w-[30%] gap-8">
+        
           <motion.div
             initial="hidden"
             animate="visible"
@@ -154,7 +127,7 @@ export default function GiftTheCouple() {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/images/couple.jpg"
+                src="/images/image1.png"
                 alt="Zoe and Joshua together"
                 width={500}
                 height={400}
