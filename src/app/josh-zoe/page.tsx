@@ -105,7 +105,7 @@ const Josh = () => {
             You are my Anchor, My Tide, My Home
           </h1>
           <p className="font-serif text-xl sm:text-2xl md:text-3xl mb-8 drop-shadow-md">
-            10.15.25 | Joshua & Zoe | Forever by the Shore
+            10.05.25 | Joshua & Zoe | Forever by the Shore
           </p>
           <p className="text-sm text-wedding-white">
             A Home built in God with Jesus at the center

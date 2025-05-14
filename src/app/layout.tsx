@@ -85,7 +85,7 @@ const sacramento = Sacramento({
 });
 
 export const metadata: Metadata = {
-  title: 'JZ lovestory 2025',
+  title: 'JZ loveStory 2025',
   description: 'Join us for a celebration of love and unity',
 };
 
@@ -113,7 +113,8 @@ export default function RootLayout({
         `}
       >
         {children}
-        <Analytics/>
+        <Analytics />
+        <div className="flex justify-center items-center w-full text-base bg-wedding-wine text-center text-wedding-cream">Built with fun and love by Taiwo (@Oluwarotimi_ on X). courtsey of Omoyeni&apos;s family</div>
       </body>
     </html>
   );

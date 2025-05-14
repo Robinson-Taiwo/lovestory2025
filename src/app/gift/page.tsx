@@ -95,7 +95,7 @@ export default function GiftTheCouple() {
                   className="bg-wedding-wine text-wedding-cream font-lora py-2 px-8 rounded-md hover:bg-wedding-gold hover:text-wedding-charcoal"
                 >
                   <Link
-                    href="https://selar.com/login?r=https%3A%2F%2Fselar.com%2Fme%2Fshowlove"
+                    href="https://selar.com/showlove/jz-lovestory25"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
