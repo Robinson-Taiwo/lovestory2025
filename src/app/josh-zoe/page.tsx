@@ -17,7 +17,7 @@ const Josh = () => {
     Joshua: {
       title: 'To Zoe',
       content:
-        'My Love, You are my answered prayer, my divine gift wrapped in grace. Each day with you feels like a testimony, and your smile is my daily miracle. Just like Ruth to Boaz, you are my blessing in season. I cherish you with a love rooted in God, guided by His light. May heaven keep us together, stronger in faith and deeper in love. My heart sings your name in every prayer. You’re my forever, my love ordained by God./n',
+        'My Love, You are my answered prayer, my divine gift wrapped in grace. Each day with you feels like a testimony, and your smile is my daily miracle. Just like Ruth to Boaz, you are my blessing in season. I cherish you with a love rooted in God, guided by His light. May heaven keep us together, stronger in faith and deeper in love. My heart sings your name in every prayer. You’re my forever, my love ordained by God.',
     },
     Zoe: {
       title: 'To Joshua',
